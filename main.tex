@@ -1,0 +1,53 @@
+\documentclass[UTF8, 12pt, a4paper, oneside]{article}
+\title{HEllO WORLD}
+\author{OceanPresent}
+
+\input{settings.tex} %加载各宏包以及本模板的主要设置
+\addbibresource{./reference.bib} %加载bib文件（参考文献
+
+\begin{document}
+
+\include{article/Cover}
+
+%\include{article/OriginalStatement}
+
+\include{article/SummaryCN}
+
+%\include{article/SummaryEN}
+
+{
+\newpage
+\zihao{4} 
+\pagestyle{empty} 
+\tableofcontents  
+\newpage
+} %目录页不显示页码
+
+
+{
+\newpage
+\zihao{4} 
+\pagestyle{empty} 
+\listoffigures
+\newpage
+}
+
+{
+\newpage
+\zihao{4} 
+\pagestyle{empty} 
+\listoftables
+\newpage
+}
+
+\include{article/Introduction}
+\include{article/TechIntroduction}
+\include{article/Requirement}
+\include{article/Design}
+\include{article/Implement}
+\include{article/Test}
+\include{article/Conclusion}
+\include{article/Reference}
+\include{article/Acknowledgement}
+
+\end{document}
